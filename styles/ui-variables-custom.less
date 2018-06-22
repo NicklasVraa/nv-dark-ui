@@ -1,7 +1,4 @@
-
-// ONE dark UI colors
-// ----------------------------------------------
-
+// NV dark UI colors
 @import "syntax-variables";
 
 .ui-syntax-color() { @syntax-background-color: hsl(220,24%,20%); } .ui-syntax-color(); // fallback color
@@ -33,39 +30,31 @@
 }
 .ui-lightness();
 
-// Main colors -----------------
+// Main colors
 @ui-fg:     hsl(@ui-hue, min(@ui-saturation, 18%), max(@ui-lightness*3, 66%) );
 @ui-bg:     hsl(224, 15%, 12%); // normalized @syntax-background-color
 @ui-border: hsl(@ui-hue, @ui-saturation, @ui-lightness-border);
 
-
-
-
 // These variables are only used in this theme
-// ----------------------------------------------
-
 @ui-theme-name: nv-dark-ui;
 
-// Text (Custom) -----------------
+// Text (Custom)
 @text-color-faded: fade(@text-color, 20%);
 
 @text-color-added:    @text-color-success;  // green
 @text-color-ignored:  @text-color-subtle;   // faded
-@text-color-modified: @text-color-info;  // orange
+@text-color-modified: @text-color-info;     // blue
 @text-color-removed:  @text-color-error;    // red
 @text-color-renamed:  @text-color-info;     // blue
 
-
-// Background (Custom) -----------------
+// Background (Custom)
 @level-1-color: lighten(@base-background-color, 5%);
 @level-2-color: @base-background-color;
 @level-3-color: darken(@base-background-color, 0%);
-
 @level-3-color-hover:  lighten(@level-3-color, 6%);
 @level-3-color-active: lighten(@level-3-color, 2%);
 
-
-// Accent (Custom) -----------------
+// Accent (Custom)
 @accent-luma:             luma( hsl(@ui-hue, 50%, 50%) ); // get lightness of current hue
 
 // used for marker, inputs (smaller things)
@@ -77,9 +66,9 @@
 @accent-bg-text-color:    contrast(@accent-bg-color, hsl(@ui-hue,100%,10%), #fff, 30% );
 
 // used for text only
-@accent-only-text-color: mix( hsv( @ui-hue, 100%, 66%), hsl( @ui-hue, 100%, 77%), @accent-luma ); // mix hsv + hsl (favor mostly hsl)
+@accent-only-text-color: mix( hsv( @ui-hue, 100%, 66%), hsl( @ui-hue, 100%, 77%), @accent-luma );
 
-// Components (Custom) -----------------
+// Components (Custom)
 @badge-background-color:            lighten(@background-color-highlight, 6%);
 
 @button-text-color-selected:        @accent-bg-text-color;
@@ -97,10 +86,9 @@
 @progress-background-color:         @accent-color;
 
 @scrollbar-color:                   lighten(@ui-syntax-color, 16%);
-@scrollbar-background-color:        @level-3-color; // replaced `transparent` with a solid color to test https://github.com/atom/one-light-ui/issues/4
+@scrollbar-background-color:        @level-3-color;
 @scrollbar-color-editor:            lighten(@ui-syntax-color, 16%);
 @scrollbar-background-color-editor: @ui-syntax-color;
-
 
 @tab-text-color:                    @text-color-subtle;
 @tab-text-color-active:             @text-color-highlight;
@@ -109,30 +97,21 @@
 @tab-inactive-status-added:         fade(@text-color-success, 55%);
 @tab-inactive-status-modified:      fade(@text-color-warning, 55%);
 
-
 @tooltip-background-color:          @accent-bg-color;
 @tooltip-text-color:                @accent-bg-text-color;
 @tooltip-text-key-color:            @tooltip-background-color;
 @tooltip-background-key-color:      @tooltip-text-color;
 
-
-// Sizes (Custom) -----------------
-
+// Sizes (Custom)
 @ui-size:                 1em;
 @ui-input-size:           @ui-size*1.15;
 @ui-padding:              @ui-size*1.5;
 @ui-padding-pane:         @ui-size*.5;
 @ui-padding-icon:         @ui-padding/3.3;
-@ui-line-height:          @ui-size*2;
+@ui-line-height:          @ui-size*1.8;
 @ui-tab-height:           @ui-size*2.5;
 
-
-
-
-// Packages variables
 // These variables are used to override packages
-// ----------------------------------------------
-
 @settings-list-background-color: darken(@level-2-color, 1.5%);
 @theme-config-box-shadow: inset 0 0 3px hsla(0, 0%, 100%, .4), 0 1px 3px hsla(0, 0%, 0%, .2);
 @theme-config-box-shadow-selected: inset 0 1px 3px hsla(0, 0%, 0%, .1);
