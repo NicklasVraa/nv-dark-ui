@@ -1,5 +1,5 @@
 root = document.documentElement
-themeName = 'one-dark-ui'
+themeName = 'nv-dark-ui'
 
 
 module.exports =

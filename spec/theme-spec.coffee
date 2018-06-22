@@ -1,4 +1,4 @@
-themeName = 'one-dark-ui'
+themeName = 'nv-dark-ui'
 
 describe "#{themeName} theme", ->
   beforeEach ->

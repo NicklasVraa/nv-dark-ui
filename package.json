@@ -1,15 +1,15 @@
 {
-  "name": "one-dark-ui",
+  "name": "nv-dark-ui",
   "theme": "ui",
-  "version": "1.12.3",
-  "description": "Atom One dark UI theme",
+  "version": "0.0.1",
+  "description": "NV One dark UI theme",
   "keywords": [
     "dark",
-    "adaptive",
+    "consistent",
     "ui"
   ],
   "license": "MIT",
-  "repository": "https://github.com/atom/one-dark-ui",
+  "repository": "https://github.com/NicklasVraa/one-dark-ui",
   "main": "lib/main",
   "engines": {
     "atom": ">0.40.0"
