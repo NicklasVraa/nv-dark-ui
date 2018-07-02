@@ -1,7 +1,5 @@
 
 // Settings
-
-// Modular Scale (1.125): http://www.modularscale.com/?1&em&1.125&web&table
 @ms-6: @ui-size * 2.027;
 @ms-5: @ui-size * 1.802;
 @ms-4: @ui-size * 1.602;
@@ -12,12 +10,9 @@
 @ms_1: @ui-size * 0.889;
 @ms_2: @ui-size * 0.790;
 
-
-
 .settings-view {
 
-	// Menu ------------------------------
-
+    //Menu
 	.config-menu {
 		position: relative;
 		min-width: @ui-size * 15;
@@ -35,18 +30,14 @@
 				vertical-align: middle;
 			}
 		}
-
-
 	}
+
 	.nav {
 		& > li > a {
 			padding: @ui-padding/2 @ui-padding;
 			line-height: @ui-line-height;
 		}
 	}
-
-
-	// Sections ------------------------------
 
 	& > .panels {
 		background-color: @level-2-color;
@@ -55,6 +46,7 @@
 	.section-container {
 		max-width: @ui-size*60;
 	}
+
 	.sub-section {
 		margin: @ui-padding*3 0;
 	}
@@ -69,9 +61,7 @@
 		margin-top: @ui-padding*2;
 	}
 
-
-	// Titles ------------------------------
-
+	// Titles
 	.section .section-heading {
 		margin-bottom: @ui-padding/1.5;
 	}
@@ -81,12 +71,10 @@
 		margin-right: @ui-padding-icon;
 	}
 
-
-
-	// Cards ------------------------------
-
+	// Cards
 	.package-card {
 		padding: @ui-padding;
+        background-color: inherit;
 		.meta-controls .status-indicator {
 			width: @ui-padding/4;
 			&:before {
@@ -95,9 +83,7 @@
 		}
 	}
 
-
-	// Components ------------------------------
-
+	// Components
 	.icon::before {
 		color: @text-color-subtle;
 	}
@@ -127,6 +113,7 @@
 		&:checked {
 			background-color: @accent-color;
 		}
+
 		&:before,
 		&:after {
 			background-color: @accent-text-color;
@@ -136,5 +123,4 @@
 	.search-container .btn {
 		font-size: @ui-input-size;
 	}
-
 }
