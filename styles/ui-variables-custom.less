@@ -3,8 +3,8 @@
 
 @ui-hue: 224;
 @ui-fg:                             hsl(@ui-hue, 14%, 75%);
-@ui-bg:                             hsl(@ui-hue, 15%, 10%);
-@ui-border:                         black;
+@ui-bg:                             hsl(@ui-hue, 15%, 12%);
+@ui-border:                         darken(@ui-bg, 5%);
 
 // Text
 @text-color-faded:                  fade(@text-color, 20%);
@@ -18,7 +18,7 @@
 @level-1-color:                     lighten(@ui-bg, 3%);
 @level-2-color:                     @ui-bg;
 @level-3-color:                     @ui-bg;
-@level-3-color-hover:               lighten(@level-3-color, 6%);
+@level-3-color-hover:               lighten(@level-3-color, 4%);
 @level-3-color-active:              lighten(@level-3-color, 2%);
 
 // Accent
