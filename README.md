@@ -1,9 +1,9 @@
-## nv-dark-ui
-Forked from one-dark-ui, tweaked by Nicklas Vraa to match nv-dark-syntax.
+# nv-dark-ui
+A dark, minimalist UI for the Atom Editor. The main colors are blue and a muted green. UI elements have been tweaked to take up a minimal amount of space and attention.
 
 ![nv-dark-syntax](https://github.com/NicklasVraa/nv-dark-ui/blob/master/example.png?raw=true)  
 Matching syntax theme: **nv-dark-syntax**  
 Visual packages: file-icons, minimap
 
-### Build Log
-I will be making more tweaks to increase aesthetic coherance with nv-dark-syntax. I will also be simplifying the code.
+---
+**Author**: Nicklas Vraa. Fork of one-dark-ui.
